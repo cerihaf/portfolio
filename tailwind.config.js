@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       brand: "'Poppins', sans-serif",
-      body: "'Source Sans Pro', sans-serif'",
+      body: "'Source Sans Pro', sans-serif",
     },
     extend: {
       colors: {
