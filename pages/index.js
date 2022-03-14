@@ -40,8 +40,8 @@ export default function Home() {
                 aesthetically pleasing user interfaces. Previous management
                 history has attested that I am proficient working alone, with a
                 team, and am comfortable taking lead in any situation. As well
-                as being capable of leading a team, I'm also a "go with the
-                flow" kind of person and take direction very well.
+                as being capable of leading a team, I&apos;m also a &quot;go
+                with the flow&quot; kind of person and take direction very well.
               </p>
             </div>
           </div>
