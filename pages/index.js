@@ -9,7 +9,7 @@ export default function Home() {
         <title>Ceri Trammell</title>
         <meta name="description" content="Full-Stack Web Developer" />
         <link rel="icon" href="/favicon.ico" />
-        <script async defer src="https://storage.googleapis.com/lucky-orange-staging-public/core/lo.js?site-id=3b7dcfb0"></script>
+        <script async defer src="https://storage.googleapis.com/lucky-orange-staging-public/core/lo.js?site-id=6721469f"></script>
       </Head>
 
       <header className="w-full bg-navy text-gold font-brand uppercase">
