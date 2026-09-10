@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Portfolio from "../components/Portfolio";
+import HubSpotContactForm from "../components/HubSpotContactForm";
 
 export default function Home() {
   return (
@@ -15,9 +16,15 @@ export default function Home() {
         <nav className="py-4 max-w-4xl mx-auto ">
           <ul className="flex items-center w-full">
             <li className="pl-4 flex-1">Ceri Trammell</li>
-            <li className="pr-4">About</li>
-            <li className="pr-4">Projects</li>
-            <li className="pr-4">Contact</li>
+            <li className="pr-4">
+              <a href="#whos-ceri">About</a>
+            </li>
+            <li className="pr-4">
+              <a href="#what-can-she-do">Projects</a>
+            </li>
+            <li className="pr-4">
+              <a href="#come-say-hi">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -55,9 +62,17 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="come-say-hi" className="py-8 px-4 max-w-4xl mx-auto ">
-          <div className="bg-gold text-navy p-4 text-center">
-            <h2 className="text-2xl pb-4 font-brand">COME SAY HI</h2>
-            <ul>
+          <div className="bg-gold text-navy p-6 md:p-8">
+            <div className="text-center">
+              <h2 className="text-2xl pb-4 font-brand">COME SAY HI</h2>
+              <p className="mx-auto max-w-xl pb-6">
+                Send me a quick note and I&apos;ll get back to you soon.
+              </p>
+            </div>
+            <div className="mx-auto max-w-xl">
+              <HubSpotContactForm />
+            </div>
+            <ul className="pt-6 text-center">
               <li>
                 <a href="tel:9135583590">913.558.3590</a>
               </li>
