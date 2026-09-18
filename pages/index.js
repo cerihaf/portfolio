@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import Portfolio from "../components/Portfolio";
 import HubSpotContactForm from "../components/HubSpotContactForm";
 
@@ -11,6 +12,11 @@ export default function Home() {
         <meta name="description" content="Full-Stack Web Developer" />
         <link rel="icon" href="/favicon.ico" />
 <script async defer src="https://storage.googleapis.com/lucky-orange-staging-public/core/lo.js?site-id=8332ac46"></script>      </Head>
+      <Script
+        id="hs-script-loader"
+        src="https://js.hs-scripts.com/52002907.js"
+        strategy="afterInteractive"
+      />
 
       <header className="w-full bg-navy text-gold font-brand uppercase">
         <nav className="py-4 max-w-4xl mx-auto ">
