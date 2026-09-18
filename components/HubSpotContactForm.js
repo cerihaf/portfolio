@@ -4,6 +4,7 @@ import Script from "next/script";
 const HUBSPOT_PORTAL_ID = "52002907";
 const HUBSPOT_FORM_ID = "71b08e44-33ac-4219-99ba-27f6d6ece275";
 const HUBSPOT_MULTI_STEP_FORM_ID = "c75ce318-5f85-41d1-b4f3-1c35e3203fba";
+const HUBSPOT_LEGACY_EDITOR_FORM_ID = "1bfaba6f-6957-4054-93e2-a1d03fae7a88";
 const LEGACY_FORM_TARGET_ID = "hubspot-legacy-v2-form";
 
 const FORM_INSTANCES = [
@@ -40,7 +41,7 @@ export default function HubSpotContactForm() {
     window.hbspt.forms.create({
       region: "na1",
       portalId: HUBSPOT_PORTAL_ID,
-      formId: HUBSPOT_FORM_ID,
+      formId: HUBSPOT_LEGACY_EDITOR_FORM_ID,
       target: `#${LEGACY_FORM_TARGET_ID}`,
     });
   };
@@ -77,10 +78,12 @@ export default function HubSpotContactForm() {
           </div>
         ))}
         <div className="border border-navy/20 p-4">
-          <h3 className="pb-2 font-brand text-lg">Legacy v2 embedded form</h3>
+          <h3 className="pb-2 font-brand text-lg">
+            Actual Legacy Form Editor form
+          </h3>
           <p className="pb-4 text-sm">
-            Uses hbspt.forms.create() to verify the existing hsFormCallback
-            integration path still identifies visitors and tracks submissions.
+            Created with HubSpot&apos;s Legacy Form Editor and embedded with
+            hbspt.forms.create() to verify the hsFormCallback integration path.
           </p>
           <div id={LEGACY_FORM_TARGET_ID} className="min-h-[220px]" />
         </div>
